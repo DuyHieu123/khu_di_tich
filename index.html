@@ -9,10 +9,11 @@
             padding: 0;
             font-family: 'Montserrat', sans-serif;
             background-color: #fdfaf5;
-            color: #333;
+            color: #333; 
             overflow-x: hidden;
             scroll-behavior: smooth; /* HIỆU ỨNG 1: Giúp trang trôi xuống mượt mà khi bấm nút */
         }
+        
         /* ô ở thẻ bảo vật nhà trần */
         .relic-left,
             .relic-right {
@@ -77,7 +78,7 @@
         }
 
         .relic-box {
-            max-width: 1000px;      /* ← BÉ LẠI */
+            max-width: 1500px;      /* ← BÉ LẠI */
             max-height: 400px;     /* ← đỡ chiếm chiều cao */
             border-radius: 22px;
 
@@ -170,8 +171,8 @@
 
 
         .relic-right img {
-            width: 100%;
-            height: 100%;
+            width: 90%;
+            height: 90%;
             object-fit: contain;
 
             transition: 
@@ -705,7 +706,7 @@
     <div class="hero">
         <h1>Di Sản</h1>
         <h2>Văn Hóa Quảng Ninh</h2>
-        <a href="#the-di-san" class="btn-hero">Khám phá ngay</a>
+        <a href="#the-di-san-vat-the" class="btn-hero">Khám phá ngay</a>
     </div>
 
     <div class="category-nav">
@@ -841,10 +842,10 @@
                 <div style="width: 40%; background: url('images/am-ngoa-van.jpg') center; background-size: cover; min-height: 250px;"></div>
                 <div style="width: 60%; padding: 40px;">
                     <h3 style="color: #b08968; font-size: 24px;">01. Vùng đất phát tích</h3>
+                    <b>-Thuộc phường An Sinh, Bình Khê, Đông Triều tỉnh Quảng Ninh-</b>
                     <p style="line-height: 1.8; color: #555; text-align: justify;">
                        Triều đại nhà Trần (1225 – 1400) là thời kỳ huy hoàng với võ công và văn trị hiển hách trong lịch sử dân tộc Việt Nam. Dù phát tích ở Thái Bình và Nam Định, Đông Triều mới là quê hương bản quán của tổ tiên nhà Trần. Nơi đây vừa là khu lăng mộ các vua Trần, vừa là trung tâm tu hành của Phật giáo Trúc Lâm, mang giá trị lịch sử và tâm linh sâu sắc.
                     </p>
-                    <b>-Thuộc phường An Sinh, Bình Khê, Đông Triều tỉnh Quảng Ninh-</b>
                     <br><br>
                     <a href="https://www.google.com/maps/place/Khu+di+t%C3%ADch+Nh%C3%A0+Tr%E1%BA%A7n/@21.1628923,106.5597243,1010m/data=!3m1!1e3!4m10!1m2!2m1!1za2h1IGRpIHTDrWNoIG5ow6AgdHLhuqdu!3m6!1s0x314a825d0e612059:0x491583016e96430d!8m2!3d21.1604707!4d106.5603286!15sChhraHUgZGkgdMOtY2ggbmjDoCB0cuG6p26SARJ0b3VyaXN0X2F0dHJhY3Rpb27gAQA!16s%2Fg%2F11c5s3pr4t?entry=ttu&g_ep=EgoyMDI2MDExMS4wIKXMDSoASAFQAw%3D%3D"
                     target="_blank"
@@ -878,6 +879,15 @@
                     </p>
                     <a href="https://www.google.com/maps/place/An+Sinh+Temple/@21.1179093,106.5371239,212m/data=!3m1!1e3!4m6!3m5!1s0x31357e18783a4173:0xda8f4c82147c4011!8m2!3d21.1174968!4d106.5370033!16s%2Fg%2F120kz0np?entry=ttu&g_ep=EgoyMDI2MDExMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"class="btn-photo" onclick="event.stopPropagation()"> 📍 Địa chỉ Đền An Sinh </a>
                     <button class="btn-photo" onclick="event.stopPropagation(); openImgWindow('images/den_an_sinh.jpg')">🖼️ Xem hình ảnh</button><br>
+                    <div id="ansinh-images" style="display:none; margin-top:15px;">
+                        <img src="images/den_an_sinh_1.jpg"
+                            style="width:100%; border-radius:10px; margin-bottom:10px; object-fit:cover;"
+                            alt="Đền An Sinh 1">
+
+                        <img src="images/den_an_sinh_2.jpg"
+                            style="width:100%; border-radius:10px; object-fit:cover;"
+                            alt="Đền An Sinh 2">
+                    </div>
                     <span onclick="event.stopPropagation(); resetAll();" style="color: #b08968; font-size: 11px; font-weight: bold; cursor: pointer; border: 1px solid #b08968; padding: 3px 10px; border-radius: 4px; display: inline-block; margin-top: 10px;">Thu gọn ▴</span>
                 </div>
             </div>
@@ -888,7 +898,7 @@
                 <div class="short-desc" style="font-size: 12px; color: #777; margin-top: 8px;">Di tích quan trọng bậc nhất.</div>
                 <div class="full-desc" style="display: none; margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px; animation: fadeIn 0.5s;">
                     <p style="font-size: 15px; line-height: 1.8; color: #333; font-family: 'Times New Roman', serif;">
-                        <b>Đền Thái:</b> Di tích quan trọng bậc nhất, nơi thờ tổ tiên và các vị vua nhà Trần, khẳng định Đông Triều là quê gốc của dòng tộc.
+                        <b>Thái Miếu:</b> Di tích quan trọng bậc nhất, nơi thờ tổ tiên và các vị vua nhà Trần, khẳng định Đông Triều là quê gốc của dòng tộc.
                     </p>
                     <a href="https://www.google.com/maps/place/%C4%90%E1%BB%81n+Th%C3%A1i+(Th%C3%A1i+mi%E1%BA%BFu+nh%C3%A0+Tr%E1%BA%A7n)/@21.1306269,106.5494438,357m/data=!3m1!1e3!4m14!1m7!3m6!1s0x314a821b8e02ef81:0x94f1ea192f65d402!2zxJDhu4FuIFRow6FpIChUaMOhaSBtaeG6v3UgbmjDoCBUcuG6p24p!8m2!3d21.1304468!4d106.5503987!16s%2Fg%2F1w9xzld1!3m5!1s0x314a821b8e02ef81:0x94f1ea192f65d402!8m2!3d21.1304468!4d106.5503987!16s%2Fg%2F1w9xzld1?entry=ttu&g_ep=EgoyMDI2MDExMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-photo" onclick="event.stopPropagation()"> 📍 Địa chỉ Thái Miếu </a>
                     <button class="btn-photo" onclick="event.stopPropagation(); openImgWindow('images/thai_mieu.webp')">🖼️ Xem hình ảnh</button><br>
@@ -958,7 +968,7 @@
 
                 <div class="relic-right">
                     <!-- Ảnh (hiển thị mặc định) -->
-                    <img id="relic-img" src="" alt="Bảo vật" style="width:100%; height:100%;">
+                    <img id="relic-img" src="" alt="Bảo vật" style="width:70%; height:70%;">
 
                     <!-- 3D (ẩn ban đầu) -->
                     <model-viewer
@@ -972,16 +982,19 @@
 
                     <!-- NÚT BẬT 3D -->
                     <button onclick="showRelic3D(event)"
-                        style="position:absolute; bottom:15px; padding:8px 16px; border-radius:20px;
+                        style="position:absolute; bottom:15px; left:15px;
+                            padding:8px 16px; border-radius:20px;
                             border:none; background:#b08968; color:white; font-size:12px; cursor:pointer;">
                         🧊 Xem 3D
                     </button>
 
                     <button onclick="showRelicImage(event)"
-                        style="position:absolute; bottom:15px; right:15px; padding:8px 16px; border-radius:20px;
+                        style="position:absolute; bottom:15px; right:15px;
+                            padding:8px 16px; border-radius:20px;
                             border:none; background:#b08968; color:white; font-size:12px; cursor:pointer;">
                         🖼️ Hình ảnh
                     </button>
+
                 </div>
             </div>
         </div>
@@ -1052,7 +1065,8 @@
             {
                 title: "Tượng Phật hoàng Trần Nhân Tông",
                 desc: "Bảo vật quý giá thể hiện tư tưởng nhập thế của Thiền phái Trúc Lâm, gắn đạo với đời.",
-                img: "images/bao-vat/tuong.jpg"
+                img: "images/bao-vat/tuong_cu.png",
+                model: "3D/tuong.glb"
             },
             {
                 title: "Hộp vàng Ngọa Vân",
@@ -1200,7 +1214,7 @@
                 <div style="width: 60%; padding: 40px;">
                     <h3 style="color: #c5a059; font-size: 24px;">✨ Di sản thế giới</h3>
                     <p style="line-height: 1.8; color: #bbb;">
-                        Năm 2025, quần thể di tích nhà Trần tại Đông Triều cùng với Yên Tử đã chính thức được UNESCO công nhận là Di sản văn hóa thế giới, vinh danh giá trị nhân văn và kiến trúc độc đáo.
+                        Khu di tích nhà Trần  được xếp hạng di tích Quốc gia đặc biệt quan trọng. Đặc biệt hơn, Khu di tích này có 2 di tích là thái miếu nhà Trần và chùa Ngoạ Vân nằm trong Quần thể di tích và danh thắng Yên Tử – Vĩnh Nghiêm – Côn Sơn, Kiếp Bạc đã được UNESCO công nhận là di sản thế giới từ năm 2025.
                     </p>
                     <div style="margin-top: 20px; border: 1px solid #c5a059; display: inline-block; padding: 5px 15px; font-size: 12px; letter-spacing: 2px;">UNESCO 2025</div>
                 </div>
